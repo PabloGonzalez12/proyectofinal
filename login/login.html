@@ -13,6 +13,9 @@
     
     <link rel="stylesheet" href="../footer.css">
 
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
     <style>
 
         #logo{
@@ -72,13 +75,18 @@
 
 
 
-<main class="container mb-5 w-100 d-flex justify-content-center">
+<main class="container mt-lg-5 mt-md-5 mb-5 w-100 d-flex justify-content-center">
 
     
         
             
-            <form id="myForm" role="form" class="col-6">
-                <h2>Iniciar sesión<small></small></h2>
+                   
+
+            <form id="login-form">
+              
+              
+
+              <h2>Iniciar sesión<small></small></h2>
                 <hr class="colorgraph">
 
 
@@ -87,7 +95,7 @@
                 <div class="row mb-3">
                     <div class="col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nombre" tabindex="1">
+                            <input type="text" name="user" id="user" class="form-control input-lg" placeholder="Nombre" tabindex="1">
                         </div>
                     </div>
                 </div>
@@ -97,7 +105,7 @@
                 <div class="row mb-4">
                     <div class="col-sm-12 col-md-12">
                         <div class="form-group">
-                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña" tabindex="5" required >
+                            <input type="password" name="pass" id="pass" class="form-control input-lg" placeholder="Contraseña" tabindex="5" required >
                         </div>
                     </div>
                 </div>
@@ -113,17 +121,48 @@
 
                 <hr class="colorgraph">
                 <div class="row text-center">
-                    <div class="col-md-6 mb-2"><button type="submit" value="Confirmar" class="btn btn-primary btn-block btn-lg" tabindex="7">Confirmar</button></div>
+                    <div class="col-md-6 mb-2"><button type="submit" value="Confirmar" onclick="sesion()" id="check" class="btn btn-primary btn-block btn-lg" tabindex="7">Confirmar</button></div>
                     <div class="col-xs-12 col-md-6 mb-2"><a href="singup.html" class="btn btn-success btn-block btn-lg">Registrarse</a></div>
                 </div>
+
+
+
+                <script>
+                  document.getElementById("login-form").addEventListener("submit", function(event) {
+                    // Evita que se envíe el formulario de forma predeterminada
+                    event.preventDefault();
+                    
+                    // Obtén los valores del formulario
+                    var username = document.getElementById("user").value;
+                    var password = document.getElementById("pass").value;
+                    
+                    // Verifica las credenciales del usuario
+                    if (username === "Isidro" && password === "Admin1234") {
+                      // Si las credenciales son correctas, redirige al usuario a la página deseada
+                      window.location.href = "account/isidro.html";
+                    } else {
+                      // Si las credenciales son incorrectas, muestra un mensaje de error
+                      
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo fue mal!',
+                        footer: "Nombre de usuario o contraseña incorrectos. Por favor, inténtalo de nuevo."
+                      })
+                  
+                    }
+                  });
+
+                </script>
+
             </form>
-        
+            
 
 </main>
 
 
 
-  <footer class="section footer-classic context-dark bg-image">
+  <footer class="section footer-classic context-dark bg-image d-lg-flex d-md-flex d-sm-none d-none">
     <div class="container">
       <div class="row row-30">
         <div class="col-md-4 col-xl-5">
@@ -204,13 +243,8 @@
 
 
 
-
-
-
-
-
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="sweetalert2.all.min.js"></script>
   
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
