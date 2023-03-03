@@ -14,6 +14,10 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -60,39 +64,112 @@
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Seguimiento</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                    
+
+                    <div class="container px-4 px-lg-5">
+                        <!-- pedido 1 -->
+                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="img/sell1.jpg" alt="..." /></div>
+                            <div class="col-lg-5">
+                                <h1 class="font-weight-light">Romanée Conti 1945</h1>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                        
+                        <div class="card text-white bg-secondary my-5 py-4 text-center">
+                            <div class="card-body"><p class="text-white m-0">
+                                <h5 class="text-white">Su producto llegará en</h5>
+                                <h1 id="demo" class="text-primary"></h1>
+
+                                    <script>
+                                    // Set the date we're counting down to
+                                    var countDownDate = new Date("marzo 9, 2023 15:37:25").getTime();
+
+                                    // Update the count down every 1 second
+                                    var x = setInterval(function() {
+
+                                    // Get today's date and time
+                                    var now = new Date().getTime();
+                                        
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+                                        
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                        
+                                    // Output the result in an element with id="demo"
+                                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                    + minutes + "m " + seconds + "s ";
+                                        
+                                    // If the count down is over, write some text 
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                    }
+                                    }, 1000);
+                                    </script>
+
+                            </p></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+                        
+
+                        <!-- pedido 2 -->
+
+                        <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                            <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="img/sell1.jpg" alt="..." /></div>
+                            <div class="col-lg-5">
+                                <h1 class="font-weight-light">Romanée Conti 1945</h1>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+                        
+                        <div class="card text-white bg-secondary my-5 py-4 text-center">
+                            <div class="card-body"><p class="text-white m-0">
+                                <h5 class="text-white">Su producto llegará en</h5>
+                                <h1 id="demo" class="text-primary"></h1>
+
+                                    <script>
+                                    // Set the date we're counting down to
+                                    var countDownDate = new Date("marzo 9, 2023 15:37:25").getTime();
+
+                                    // Update the count down every 1 second
+                                    var x = setInterval(function() {
+
+                                    // Get today's date and time
+                                    var now = new Date().getTime();
+                                        
+                                    // Find the distance between now and the count down date
+                                    var distance = countDownDate - now;
+                                        
+                                    // Time calculations for days, hours, minutes and seconds
+                                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                        
+                                    // Output the result in an element with id="demo"
+                                    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                    + minutes + "m " + seconds + "s ";
+                                        
+                                    // If the count down is over, write some text 
+                                    if (distance < 0) {
+                                        clearInterval(x);
+                                        document.getElementById("demo").innerHTML = "EXPIRED";
+                                    }
+                                    }, 1000);
+                                    </script>
+
+                            </p></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                        
                     </div>
+
+
+
+                    </div>
+
+
                 </div>
             </section>
             <hr class="m-0" />
