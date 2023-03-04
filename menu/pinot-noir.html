@@ -21,6 +21,9 @@
             align-self: center;
         }
         
+        .position-sticky{
+          z-index: 4;
+        }
 
     </style>
 
@@ -137,13 +140,135 @@
       </nav>
 </header>   
 
+
+<!-- megamenu -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow position-sticky top-0">
+  <div class="container-fluid d-flex justify-content-start">
+    <a class="navbar-brand" href="#"> <span class="badge bg-primary"></span></a>
+    
+    <div class="navbar-collapse" id="navbar-content">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"></a>
+        </li>
+        
+        <li class="nav-item dropdown dropdown-mega position-static">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+          </svg></a>
+          <div class="dropdown-menu shadow">
+            <div class="mega-content px-4">
+              <div class="container-fluid">
+
+                <!-- fila 1 -->
+                <div class="row">
+                  <div class="col-12 col-sm-4 col-md-3 py-4">
+                    <h6 class="text-center"> <i class="fa fa-wine-glass"></i> Vinos blancos</h6>
+                    <div class="list-group">
+                      <a class="list-group-item" href="chardonnay.html">Chardonnay</a>
+                      <a class="list-group-item" href="#">Sauvignon Blanc</a>
+                      <a class="list-group-item" href="#">Riesling</a>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="col-12 col-sm-4 col-md-3 py-4">
+                    <h6 class="text-center"> <i class="fa fa-wine-glass"></i> Vinos tintos</h6>
+                    <div class="list-group">
+                      <a class="list-group-item" href="#">Cabernet Sauvignon</a>
+                      <a class="list-group-item" href="pinot-noir.html">Pinot Noir</a>
+                      <a class="list-group-item" href="#">Merlot</a>
+                    </div>
+                  </div>
+
+                  
+                  <div class="col-12 col-sm-4 col-md-3 py-4">
+                    <h6 class="text-center"> <i class="fa fa-utensils"></i> Jamones</h6>
+                    <div class="list-group">
+                      <a class="list-group-item" href="#">Jamón Ibérico</a>
+                      <a class="list-group-item" href="#">Jamón Serrano</a>
+                      <a class="list-group-item" href="#">Prosciutto</a>
+                    </div>
+                  </div>
+
+
+                  <div class="col-12 col-sm-4 col-md-3 py-4">
+                    <h6 class="text-center"> <i class="fa fa-wine-glass"></i> Vinos rosados</h6>
+                    <div class="list-group">
+                      <a class="list-group-item" href="#">Rosado seco de Garnacha</a>
+                      <a class="list-group-item" href="#">Rosado seco de Pinot Noir</a>
+                      <a class="list-group-item" href="#">Rosado espumoso</a>
+                    </div>
+                  </div>
+
+
+
+                  <!-- fila 2 -->
+
+
+                  
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h6 class="text-center"> <i class="fa fa-oil-can"></i> Aceites</h6>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Aceite de Oliva Virgen Extra</a>
+                        <a class="list-group-item" href="#">Aceite de Coco</a>
+                        <a class="list-group-item" href="#">Aceite de Aguacate</a>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h6 class="text-center"> <i class="fa fa-wine-glass"></i> Vinos espumosos</h6>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Champagne</a>
+                        <a class="list-group-item" href="#">Cava</a>
+                        <a class="list-group-item" href="#">Prosecco</a>
+                      </div>
+                    </div>
+  
+                    
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h6 class="text-center"> <i class="fa fa-wine-glass"></i> Vinos dulces</h6>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Moscatel</a>
+                        <a class="list-group-item" href="#">Vino de Oporto</a>
+                        <a class="list-group-item" href="#">Tokaji</a>
+                      </div>
+                    </div>
+  
+  
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h6 class="text-center"> <i class="fa fa-cheese"></i> Quesos</h6>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Cheddar</a>
+                        <a class="list-group-item" href="#">Brie</a>
+                        <a class="list-group-item" href="#">Gorgonzola</a>
+                      </div>
+                    </div>
+                  
+
+                
+              </div>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+<!-- filtro -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    
+    <div class="navbar-collapse" id="navbarNav">
       
       <form class="d-flex ms-auto">
         <input class="form-control me-2" type="search" placeholder="Precio máximo" aria-label="Search">
@@ -158,209 +283,211 @@
   </div>
 </nav>
 
-    <main>
+<!-- main -->
+
+<main>
 
 
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Vino-Vinas-del-Vero-Pinot-Noir---Series-Limitadas.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">VINO VINAS DEL VERO PINOT NOIR -- SERIES LIMITADAS</h5>
-                                    <!-- Product price-->
-                                    51,00 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+    <!-- Section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Vino-Vinas-del-Vero-Pinot-Noir---Series-Limitadas.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">VINO VINAS DEL VERO PINOT NOIR -- SERIES LIMITADAS</h5>
+                                <!-- Product price-->
+                                51,00 €
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Vino-Clos-Montblanc-Pinot-Noir-Premium.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">CLOS MONTBLANC PINOT NOIR PREMIUM</h5>
-                                    <!-- Product price-->
-                                    10,39 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                            </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Pol-Cochet-Champagne-Brut-Rosado_0.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">POL COCHET CHAMPAGNE BRUT ROSADO</h5>
-                                    <!-- Product price-->
-                                    28,99 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Vino-Clos-Montblanc-Pinot-Noir-Premium.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">CLOS MONTBLANC PINOT NOIR PREMIUM</h5>
+                                <!-- Product price-->
+                                10,39 €
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Champagne-Laurent-perrier-Cuvee-Rose-Magnum.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">LAURENT-PERRIER CUVEÉ ROSÉ</h5>
-                                    <!-- Product price-->
-                                    159,44 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                            </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/canals-munne-rose-pinot-noi.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">CANALS & MUNNÉ ROSÉ PINOT NOIR</h5>
-                                    <!-- Product price-->
-                                    15,75 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Pol-Cochet-Champagne-Brut-Rosado_0.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">POL COCHET CHAMPAGNE BRUT ROSADO</h5>
+                                <!-- Product price-->
+                                28,99 €
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/pinot-noir.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">PINOT NOIR</h5>
-                                    <!-- Product price-->
-                                    11,25 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                            </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/vinas-del-vero-pinot-noir-2008.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">VIÑAS DEL VERO PINOT NOIR COLECCIÓN</h5>
-                                    <!-- Product price-->
-                                    16,25 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Champagne-Laurent-perrier-Cuvee-Rose-Magnum.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">LAURENT-PERRIER CUVEÉ ROSÉ</h5>
+                                <!-- Product price-->
+                                159,44 €
                             </div>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Champagne-Laurent-perrier-Cuvee-Rose.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">LAURENT-PERRIER CUVEÉ ROSÉ</h5>
-                                    <!-- Product price-->
-                                    71,77 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
-                            </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
                         </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/Vino-Raventos-i-Blanc-La-Rosa.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">RAVENTÓS I BLANC LA ROSA</h5>
-                                    <!-- Product price-->
-                                    8,60 €
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/canals-munne-rose-pinot-noi.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">CANALS & MUNNÉ ROSÉ PINOT NOIR</h5>
+                                <!-- Product price-->
+                                15,75 €
                             </div>
                         </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
                     </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" id="imgc" src="img/rose-dones.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">ROSÉ DONE´S</h5>
-                                    <!-- Product price-->
-                                    16,69 €
-                                </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/pinot-noir.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">PINOT NOIR</h5>
+                                <!-- Product price-->
+                                11,25 €
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/vinas-del-vero-pinot-noir-2008.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">VIÑAS DEL VERO PINOT NOIR COLECCIÓN</h5>
+                                <!-- Product price-->
+                                16,25 €
                             </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Champagne-Laurent-perrier-Cuvee-Rose.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">LAURENT-PERRIER CUVEÉ ROSÉ</h5>
+                                <!-- Product price-->
+                                71,77 €
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/Vino-Raventos-i-Blanc-La-Rosa.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">RAVENTÓS I BLANC LA ROSA</h5>
+                                <!-- Product price-->
+                                8,60 €
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" id="imgc" src="img/rose-dones.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">ROSÉ DONE´S</h5>
+                                <!-- Product price-->
+                                16,69 €
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver producto</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        
-    </main>
+    
+</main>
 
 
 <!-- footer -->
