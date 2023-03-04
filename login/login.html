@@ -155,6 +155,35 @@
 
                 </script>
 
+
+                <script>
+                  document.getElementById("login-form").addEventListener("submit", function(event) {
+                    // Evita que se envíe el formulario de forma predeterminada
+                    event.preventDefault();
+                    
+                    // Obtén los valores del formulario
+                    var username = document.getElementById("user").value;
+                    var password = document.getElementById("pass").value;
+                    
+                    // Verifica las credenciales del usuario
+                    if (username === "admin" && password === "Admin1234") {
+                      // Si las credenciales son correctas, redirige al usuario a la página deseada
+                      window.location.href = "account/admin.html";
+                    } else {
+                      // Si las credenciales son incorrectas, muestra un mensaje de error
+                      
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Algo fue mal!',
+                        footer: "Nombre de usuario o contraseña incorrectos. Por favor, inténtalo de nuevo."
+                      })
+                  
+                    }
+                  });
+
+                </script>
+
             </form>
             
 
