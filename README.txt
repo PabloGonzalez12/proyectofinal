@@ -17,3 +17,9 @@ contraseña administrador: Admin1234
 
 usuario normal: Isidro
 contraseña normal: Admin1234
+
+
+
+--------------------------------------------------------
+
+En los tags solo funcionan los dos primeros, que son los mismos que los del menu
